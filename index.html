@@ -29,33 +29,35 @@
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Emmanuel <span>M.</span></a>
+      <a href="#" class="logo"
+        >Emmanuel <span>M.</span> <span class="animate" style="--i: 1"></span
+      ></a>
+
+      <span class="animate" style="--i: 2"></span>
 
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navlist">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <div class="top-btnn">
-        <a href="#contact" class="h-btn">Contact me</a>
-      </div>
     </header>
 
     <section class="hero" id="home">
       <div class="main-content" data-aos="fade-in">
-        <h2>Hi, <span> There!</span></h2>
-        <div class="text-animate">
-          <h1>I'm Emmanuel Marvelous</h1>
+        <h1>Hi, I'm <span>Emmanuel Marvelous</span></h1>
+        <div>
+          <h3>And I'm a <span class="text"></span></h3>
         </div>
-        <h2 class="skill">Frontend <span>Developer</span></h2>
 
         <p>
           Greetings! I'm Emmanuel Marvelous, a versatile creative professional
@@ -72,9 +74,18 @@
         </div>
 
         <div class="main-btn">
-          <a href="#" class="btn">Hire me</a>
+          <a href="#contact" class="btn">Hire me</a>
           <a href="#" class="btn btn2">Download CV </a>
         </div>
+
+        <div class="hero-imgHover"></div>
+      </div>
+
+      <div>
+        <img
+          src="images/pexels-churckyno-bryant-1546035.jpg"
+          class="hero-img"
+        />
       </div>
     </section>
 
@@ -124,7 +135,107 @@
       </div>
     </section>
 
-    <sectio
+    <section class="education" id="education" data-aos="zoom-in-down">
+      <h2 class="heading">My <span>Journey</span></h2>
+
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Masters Degree - University</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Masters Degree - University</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Masters Degree - University</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-column">
+          <h3 class="title">Experience</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Web Developer - Company</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Web Developer - Company</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2020-2022 </i>
+                </div>
+                <h3>Web Developer - Company</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectuer adipisicing elit.
+                  Expeditia corruti ex-eos commodi quibusadam quos opito
+                  explicabo dolor repellendus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="services" id="services">
       <div class="center-text" data-aos="fade-down">
@@ -180,8 +291,6 @@
       </div>
     </section>
 
-    <section></section>
-
     <section class="portfolio" id="portfolio">
       <div class="center-text" data-aos="fade-down">
         <h2>My <span>Portfolio</span></h2>
@@ -189,16 +298,19 @@
 
       <div class="Portfolio-content" data-aos="zoom-in-up">
         <div class="row">
-          <img src="images/port-1.jpg" />
+          <img
+            href="http://127.0.0.1:5504/codes/HTML%20FORM/index.html"
+            src="images/port-1.jpg"
+          />
           <div class="main-row">
             <div class="row-text">
-              <h5>Graphic Design</h5>
+              <h5>HTML FORM</h5>
             </div>
             <div class="row-icon">
               <i class="ri-github-fill"></i>
             </div>
           </div>
-          <h4>Website Development For Dark X</h4>
+          <h4>FreeCodeCamp HTML Form Clone</h4>
         </div>
 
         <div class="row">
@@ -268,9 +380,71 @@
       </div>
     </section>
 
+    <section class="skills" id="skills" data-aos="zoom-in-up">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">Coding Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Javascript <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>React <span>50%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-column">
+          <h3 class="title">Professional Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Web Design <span>95%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Web Development <span>82%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Graphic Design <span>94%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Copywriting <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact" id="contact">
       <div class="center-text" data-aos="fade-down">
-        <h2>Contact <span>Me</span></h2>
+        <h2>Contact <span>Me!</span></h2>
       </div>
 
       <div class="contact-form" data-aos="zoom-in">
@@ -285,7 +459,13 @@
             placeholder="Write Message Here..."
             required
           ></textarea>
-          <input type="submit" name="" value="Send Message" class="send-btn" />
+          <input
+            type="submit"
+            name=""
+            value="Send Message"
+            class="send-btn"
+            href="https://mail.google.com/mail/u/1/#inbox"
+          />
         </form>
       </div>
     </section>

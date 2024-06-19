@@ -16,3 +16,11 @@ window.onscroll = () => {
   menu.classList.remove('bx-x');
   navlist.classList.remove('active');
 };
+
+let typed = new Typed('.text', {
+  strings: ['Frontend Developer', 'Copywriter', 'Web Developer'],
+  typespeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
